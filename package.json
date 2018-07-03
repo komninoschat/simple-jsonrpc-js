@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jershell/simple-jsonrpc-js.git"
+    "url": "https://github.com/openswap/simple-jsonrpc-js.git"
   },
   "keywords": [
     "jsonrpc",
@@ -18,11 +18,14 @@
     "api"
   ],
   "author": "QuickResto Frontend Team <jershell@mail.ru>",
+  "contributors": [
+    "komninoschat <komninoschat@gmail.com>"
+  ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jershell/simple-jsonrpc-js/issues"
+    "url": "https://github.com/openswap/simple-jsonrpc-js/issues"
   },
-  "homepage": "https://github.com/jershell/simple-jsonrpc-js",
+  "homepage": "https://github.com/openswap/simple-jsonrpc-js",
   "devDependencies": {
     "chai": "^3.5.0",
     "gulp": "^3.9.1",
