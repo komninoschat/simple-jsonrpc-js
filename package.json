@@ -1,6 +1,6 @@
 {
   "name": "simple-jsonrpc-js",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "simple jsonrpc client/server handler",
   "main": "index.js",
   "types": "simple-jsonrpc-js.d.ts",

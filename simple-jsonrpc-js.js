@@ -2,7 +2,7 @@
     'use strict';
     /*
      name: simple-jsonrpc-js
-     version: 0.0.10
+     version: 0.0.11
      */
     var _Promise = Promise;
 
@@ -197,7 +197,6 @@
                 }
             }
             catch (e) {
-                console.error('Resolver error:' + e.message, e);
                 return _Promise.reject(e);
             }
         }
@@ -207,7 +206,7 @@
                 waitingframe[error.id].reject(error.error);
             }
             else {
-                console.log('Unknown request', error);
+                // Unknown error
             }
         }
 
@@ -217,7 +216,7 @@
                 delete waitingframe[result.id];
             }
             else {
-                console.log('unknown request', result);
+                // Unknown request
             }
         }
 
@@ -367,8 +366,7 @@
         }
 
         self.toStream = function (a) {
-            console.log('Need define the toStream method before use');
-            console.log(arguments);
+            throw new Error('No toStream function defined');
         };
 
         self.dispatch = function (functionName, paramsNameFn, fn) {
@@ -442,7 +440,6 @@
                 return beforeResolve(message);
             }
             catch (e) {
-                console.log("Error in messageHandler(): ", e);
                 self.toStream(JSON.stringify({
                     "id": null,
                     "jsonrpc": "2.0",
