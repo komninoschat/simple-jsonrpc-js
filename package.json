@@ -3,6 +3,7 @@
   "version": "0.0.10",
   "description": "simple jsonrpc client/server handler",
   "main": "index.js",
+  "types": "simple-jsonrpc-js.d.ts",
   "scripts": {
     "test": "node ./node_modules/mocha/bin/mocha"
   },
