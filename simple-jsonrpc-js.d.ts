@@ -15,4 +15,4 @@ declare class JsonRPC {
     public messageHandler(rawMessage: string): Promise<any>;
 }
 
-export default JsonRPC;
+export = JsonRPC;
